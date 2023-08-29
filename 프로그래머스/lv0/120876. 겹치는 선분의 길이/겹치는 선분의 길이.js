@@ -1,6 +1,6 @@
 function solution(lines) {
   var answer = 0;
-  let lineMap = new Array(200);  // 선분들이 놓일 공간
+  let lineMap = new Array(200);
   lineMap.fill(0);
 
   for (let i = 0; i < 3; i++) {
