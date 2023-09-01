@@ -1,13 +1,11 @@
 function solution(A, B) {
-    let arr = [...A]
-    for(let i = 0; i< arr.length; i++){
-        if(A === B)
-            return i;
-        else{
-            arr.unshift(arr.pop())
-            if(arr.join('') === B)
-                return i+1;
-        }
+    var answer = 0;
+    if(A === B) return 0;
+    A = A.split("");
+    for(let i = 0; i < A.length; i++) {
+        A.unshift(A.pop());
+        answer++;
+        if(A.join("") === B) return answer;
     }
-    return -1;
+    return answer === A.length ? -1 : answer;
 }
