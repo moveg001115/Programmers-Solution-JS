@@ -1,5 +1,3 @@
 function solution(num) {
-    var answer = '';
-    return answer = (num % 2) ? "Odd" : "Even";
-
+    return (num % 2) ? "Odd" : "Even";
 }
